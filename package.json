@@ -4,13 +4,12 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-  "dev": "vite",
+   "dev": "vite",
   "build": "vite build",
-  "preview": "vite preview"
-    "build:dev": "vite build --mode development",
-   
-    "lint": "eslint .",
-    "format": "prettier --write ."
+  "preview": "vite preview",
+  "build:dev": "vite build --mode development",
+  "lint": "eslint .",
+  "format": "prettier --write ."
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
