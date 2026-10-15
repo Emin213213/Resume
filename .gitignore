@@ -30,4 +30,7 @@ bunfig.toml
 *.ntvs*
 *.njsproj
 *.sln
+
 *.sw?
+codex
+.codex/

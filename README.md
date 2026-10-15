@@ -29,7 +29,7 @@ I focus on clean, maintainable code, well-structured architecture, and creating 
 **Tools & Workflow**
 - Git, GitHub, Vite, Postman, Figma
 - Jest, React Testing Library
-- AI-assisted development: Codex, Claude, ChatGPT, Gemini
+- AI-assisted development: Claude, ChatGPT, Gemini
 
 ## 💻 Featured Projects
 
