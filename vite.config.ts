@@ -6,6 +6,8 @@ export default defineConfig({
     base: "/Resume/",
   },
 
+  nitro: false,
+
   tanstackStart: {
     server: { entry: "server" },
     prerender: {
