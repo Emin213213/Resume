@@ -55,7 +55,7 @@ export const aboutBlocks = [
 ] as const;
 
 export const stats = [
-  { value: "2", label: "Years building for the web" },
+  { value: "1.5", label: "Years of hands-on experience" },
   { value: "3", label: "Full-stack products shipped" },
   { value: "30+", label: "Technologies in daily use" },
 ] as const;
@@ -67,20 +67,55 @@ export type ExperienceItem = {
   location?: string;
   description: string;
   highlights?: string[];
+  stack?: string[];
 };
 
 export const experience: ExperienceItem[] = [
   {
-    role: "Web Developer",
-    company: "",
-    period: "",
-    location: "Kharkiv, Ukraine",
+    role: "Full-Stack Developer",
+    company: "BookApp",
+    period: "04 Jul 2025 - 02 Feb 2026",
+    stack: ["React", "TypeScript", "NestJS", "Prisma ORM", "PostgreSQL", "Redux Toolkit", "Axios", "Zod", "Tailwind CSS", "ShadCN UI"],
     description:
-      "Hands-on experience building full-featured web applications through personal projects, internships and team-based development. Responsible for responsive interfaces, application logic, API integrations, data management, validation, testing and optimization.",
+      "Developed a full-stack book management application from scratch using React, TypeScript, NestJS, Prisma ORM and PostgreSQL.",
     highlights: [
-      "Responsive interfaces and application logic",
-      "REST API design, integration and data management",
-      "Validation, testing and performance optimization",
+      "Built a multi-page React application with React Router and a NestJS REST API backed by Prisma ORM",
+      "Implemented JWT, Google OAuth, email verification and password recovery",
+      "Created user profiles, session management and authorization workflows",
+      "Managed application state with Redux Toolkit and API communication with Axios",
+      "Validated forms and API data with Zod and built a responsive UI with Tailwind CSS and ShadCN UI",
+    ],
+  },
+  {
+    role: "Full-Stack Developer",
+    company: "PlanIt",
+    period: "03 Aug 2024 - 20 Apr 2025",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "Prisma ORM", "PostgreSQL", "NextAuth", "Cloudinary"],
+    description:
+      "Created an event planning platform with a booking system, media uploads and user dashboards using Next.js App Router, TypeScript, Prisma ORM and PostgreSQL.",
+    highlights: [
+      "Built UI components with ShadCN UI and Tailwind CSS",
+      "Integrated NextAuth authentication with OAuth and email/password sign-in",
+      "Implemented event creation and editing with image uploads to Cloudinary",
+      "Developed API routes for CRUD operations with Prisma ORM",
+      "Optimized the database structure and performed migrations",
+      "Configured SSR and ISR for improved SEO and performance",
+    ],
+  },
+  {
+    role: "Full-Stack Developer",
+    company: "UrbanSneaks",
+    period: "20 Oct 2022 - 10 Feb 2023",
+    stack: ["React 18", "TypeScript", "Redux Toolkit", "React Query", "Tailwind CSS", "Axios", "Node.js", "Express", "Prisma ORM", "PostgreSQL"],
+    description:
+      "Developed an e-commerce platform for premium sneakers with a product catalogue, filtering, shopping cart and user accounts using React, TypeScript, Node.js and PostgreSQL.",
+    highlights: [
+      "Built a responsive, pixel-perfect storefront from Figma designs",
+      "Implemented product filtering by brand, size, colour and price",
+      "Integrated shopping cart functionality with backend data persistence",
+      "Connected REST APIs with Axios, including error handling and loading states",
+      "Used React Query for data caching and performance optimization",
+      "Contributed backend models and CRUD operations with Express and Prisma ORM",
     ],
   },
   // TODO: add further roles here — { role, company, period, location, description, highlights }
